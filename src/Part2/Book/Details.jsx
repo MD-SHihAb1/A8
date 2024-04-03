@@ -85,25 +85,20 @@ const Details = () => {
                       
                         <div className="flex gap-8">
                             <div>
-                            <button className="btn"> <Link to='/book/read'><a>Read</a></Link> </button>
+                            <button onClick={() => handleAddToBook(bookData)} className="btn">Read</button>
                             </div>
-                            <div>
                             
-                            <Link to='/book/read'><li><a>Pages to Read</a></li></Link>
-                            </div>
                             {/* <div>
                             <button onClick={handleAddToBook} className="btn btn-active btn-accent">Wishlist</button>
                             </div> */}
                             <div>
                             <button onClick={() => handleAddToWish(bookData)} className="btn btn-active btn-accent">Wishlist</button>
                             </div>
-                            <div>
-                            <button onClick={() => handleAddToBook(bookData)} className="btn btn-active btn-accent">Add to Wishlist</button>
-                            </div>
+                          
                             
                             {/* <button onClick={handleAddToBook} className="btn btn-active btn-accent">Wishlist</button> */}
 
-
+                            
 
 
                         </div>

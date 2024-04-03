@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 
 const Part1 = () => {
@@ -16,7 +18,7 @@ const Part1 = () => {
                     <div>
                     <h1 className="text-5xl font-bold">Books to freshen up <br /> your bookshelf</h1>
                     <p className="py-6"></p>
-                    <button className="btn btn-primary">View The List</button>
+                    <Link to='book/read'><button className="btn btn-primary">View The List</button></Link>
                     </div>
                 </div>
                 </div>

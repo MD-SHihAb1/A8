@@ -12,6 +12,7 @@ import ReadBooks from "./Part2/Book/ReadBooks.jsx";
 import Wishlist from "./Part2/Book/Wishlist.jsx";
 import Login from "./Part2/Book/Login.jsx";
 import Singup from "./Part2/Book/Tjs/Singup.jsx";
+import ReadChart from "./Part2/Book/ReadChart.jsx";
 
 
 
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
         element: <App></App>,
       },
       {
-        path: "/about",
+        path: "",
         element: <Part2></Part2>,
       },
       {
@@ -51,8 +52,12 @@ const router = createBrowserRouter([
             path: 'wishlist',
             element: <Wishlist></Wishlist>,
           },
-        ]
-          
+         
+        ]  
+      },
+      {
+        path:'pagetoread',
+        element:<ReadChart></ReadChart>
       }
     ],
   
@@ -65,6 +70,11 @@ const router = createBrowserRouter([
   // },
 
 
+
+  // {
+  //   path:'pagetoread',
+  //   element:<ReadChart></ReadChart>
+  // },
   {
     path:'login',
     element:<Login></Login>
